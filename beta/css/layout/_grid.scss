@@ -1,0 +1,14 @@
+/* ==========================================================================
+   Grid
+   ========================================================================== */
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+@import "../abstracts/functions";
+
+// media break point
+.foo {
+    margin: 10px;
+    @include respond-to('XS') {
+        margin: 15px;
+    }
+}
