@@ -2,13 +2,21 @@
 ## General Resources
 These Styles are build using [SASS](https://sass-lang.com/) and follow the best practices of [SASS architecture](https://sass-guidelin.es/#architecture). All Documentation is created using [MarkDown](https://daringfireball.net/projects/markdown/). [Git Guide to MarkDown](https://guides.github.com/features/mastering-markdown/) is a great place to start learning MarkDown.
 
-### BEM
+* [normalize.css v8.0.1](https://github.com/necolas/normalize.css) – css/vendors
+* [variable fonts](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide "mozilla documentation")
 
-* [resource](https://en.bem.info/)
-* [article - introduction to](https://www.gapintelligence.com/blog/bem-for-css-an-introduction/)
-* [article - ui philosophy](https://itnext.io/thinking-of-bem-as-a-ui-philosophy-instead-of-a-css-naming-convention-9727e2cf9328)
+### Frameworks and Reference
+* [get.foundation | getting started : documentation](https://get.foundation/sites/docs/index.html)
+* [getbootstrap.com | getting started : documentation](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
+
+### BEM
+* [getbem.com : resource](http://getbem.com/)
+* [en.bem.info : resource](https://en.bem.info/)
+* [gapintelligence.com | BEM for css an introduction : article](https://www.gapintelligence.com/blog/bem-for-css-an-introduction/)
+* [itnext.io | ui philosophy : article](https://itnext.io/thinking-of-bem-as-a-ui-philosophy-instead-of-a-css-naming-convention-9727e2cf9328)
 
 ### SASS
+* [get.foundation | sass functions : documentation](https://get.foundation/sites/docs/sass-functions.html)
 
 ### MarkDown
 Here are a few quick MD notes, mostly used by me as a reminder but can get you started.

@@ -2,3 +2,6 @@
 *.css.map
 *.sass.map
 *.scss.map
+
+# local development
+.DS_Store

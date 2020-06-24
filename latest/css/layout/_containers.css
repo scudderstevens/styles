@@ -1,0 +1,23 @@
+/* 
+ * Containers
+ * ==========
+ * layout/containers
+ */
+body {
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+/* header { 
+ *  // Responsive Retina Logo
+ *  div.logo {
+ *      background: url("logo.png") no-repeat;
+ *      @include image-2x("logo2x.png", 100px, 25px);
+ *  }
+ * }
+ */

@@ -1,0 +1,348 @@
+/*
+ * blog.scudderstevens.me
+ * ===========
+ * themes/blog.scss
+ */
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+// fonts
+@font-face {
+    font-family: 'Raleway', sans-serif;
+    src: url("../../assets/fonts/Raleway/Raleway-VariableFont_wght.ttf") format("fft"),
+         url("../../assets/fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf") format("fft");
+}
+@font-face {
+    font-family: 'Dosis', sans-serif;
+    src: url("../../assets/fonts/Dosis/Dosis-VariableFont_wght.ttf") format("fft");
+}
+ 
+// color vars
+$alt:  #dfc53c;
+$primary: adjust-hue( $alt, 180 );
+$secondary: adjust-hue( $primary, 260 );
+$accent: adjust-hue( $secondary, 180 );
+ 
+body.blog {
+
+    // body background
+    background-color: $white;
+
+    // fonts
+    .alert {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 200;
+        font-variation-settings: 'wdth' 110;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Dosis', sans-serif;
+        font-optical-sizing: auto;
+    }
+    p, a {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1rem;
+        font-weight: 300;
+        font-variation-settings: 'wdth' 100;
+        font-optical-sizing: auto;
+    }
+
+    // font variations
+    h1 {
+        font-size: 2rem;
+        font-weight: 500;
+        font-variation-settings: 'wdth' 90;
+    }
+    h2 {
+        font-size: 1.75rem;
+        font-weight: 450;
+        font-variation-settings: 'wdth' 90;
+    }
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-variation-settings: 'wdth' 90;
+    }
+    h4 {
+        font-size: 1.25rem;
+        font-weight: 350;
+        font-variation-settings: 'wdth' 90;
+    }
+    h5 {
+        font-size: 1rem;
+        font-weight: 300;
+        font-variation-settings: 'wdth' 100;
+    } 
+    h6 {
+        font-size: .75rem;
+        font-weight: 250;
+        font-variation-settings: 'wdth' 110;
+    }
+
+    // M (larger)
+    p.mega, a.mega {
+        font-weight: 350; 
+        font-size: 1.25rem;
+    }
+    p.giga, a.giga {
+        font-weight: 400; 
+        font-size: 1.5rem;
+    }
+    p.tera, a.tera {
+        font-weight: 450; 
+        font-size: 1.75rem;
+    }
+
+    // µ (smaller)
+    p.micro, a.micro {
+        font-weight: 250; 
+        font-size: .85rem;
+    } 
+    p.nano, a.nano {
+        font-weight: 200;
+        font-size: .65rem;
+    }
+    p.pico, a.pico {
+        font-weight: 150; 
+        font-size: .15rem;
+    }
+
+    // colors
+    .primary {
+        background-color: $primary;
+        // white
+        &_s1,
+        &_s10,
+        &_s100 { background-color: $white }
+        // shades
+        &_s095 { background-color: lighten( $primary, 40% ); }
+        &_s09,
+        &_s090 { background-color: lighten( $primary, 35% ); }
+        &_s085 { background-color: lighten( $primary, 30% ); }
+        &_s08,
+        &_s080 { background-color: lighten( $primary, 25% ); }
+        &_s075 { background-color: lighten( $primary, 20% ); }
+        &_s07,
+        &_s070 { background-color: lighten( $primary, 15% ); }
+        &_s065 { background-color: lighten( $primary, 10% ); }
+        &_s06,
+        &_s060 { background-color: lighten( $primary, 5% ); }
+        &_s055 { background-color: $primary; }
+        &_s05,
+        &_s050 { background-color: darken( $primary, 5% ); } // 50%
+        &_s045 { background-color: darken( $primary, 10% ); }
+        &_s04,
+        &_s040 { background-color: darken( $primary, 15% ); }
+        &_s035 { background-color: darken( $primary, 20% ); }
+        &_s03,
+        &_s030 { background-color: darken( $primary, 25% ); }
+        &_s025 { background-color: darken( $primary, 30% ); }
+        &_s02,
+        &_s020 { background-color: darken( $primary, 35% ); }
+        &_s015 { background-color: darken( $primary, 40% ); }
+        &_s01,
+        &_s010 { background-color: darken( $primary, 45% ); }
+        &_s005 { background-color: darken( $primary, 50% ); }
+        // black
+        &_s0,
+        &_s00,
+        &_s000 { background-color: $black; }
+    }
+    .secondary {
+        background-color: $secondary;
+        // white
+        &_s1,
+        &_s10,
+        &_s100 { background-color: $white }
+        // shades
+        &_s095 { background-color: lighten( $secondary, 40% ); }
+        &_s09,
+        &_s090 { background-color: lighten( $secondary, 35% ); }
+        &_s085 { background-color: lighten( $secondary, 30% ); }
+        &_s08,
+        &_s080 { background-color: lighten( $secondary, 25% ); }
+        &_s075 { background-color: lighten( $secondary, 20% ); }
+        &_s07,
+        &_s070 { background-color: lighten( $secondary, 15% ); }
+        &_s065 { background-color: lighten( $secondary, 10% ); }
+        &_s06,
+        &_s060 { background-color: lighten( $secondary, 5% ); }
+        &_s055 { background-color: $secondary; }
+        &_s05,
+        &_s050 { background-color: darken( $secondary, 5% ); } // 50%
+        &_s045 { background-color: darken( $secondary, 10% ); }
+        &_s04,
+        &_s040 { background-color: darken( $secondary, 15% ); }
+        &_s035 { background-color: darken( $secondary, 20% ); }
+        &_s03,
+        &_s030 { background-color: darken( $secondary, 25% ); }
+        &_s025 { background-color: darken( $secondary, 30% ); }
+        &_s02,
+        &_s020 { background-color: darken( $secondary, 35% ); }
+        &_s015 { background-color: darken( $secondary, 40% ); }
+        &_s01,
+        &_s010 { background-color: darken( $secondary, 45% ); }
+        &_s005 { background-color: darken( $secondary, 50% ); }
+        // black
+        &_s0,
+        &_s00,
+        &_s000 { background-color: $black; }
+    }
+    .accent {
+        background-color: $accent;
+        // white
+        &_s1,
+        &_s10,
+        &_s100 { background-color: $white }
+        // shades
+        &_s095 { background-color: lighten( $accent, 40% ); }
+        &_s09,
+        &_s090 { background-color: lighten( $accent, 35% ); }
+        &_s085 { background-color: lighten( $accent, 30% ); }
+        &_s08,
+        &_s080 { background-color: lighten( $accent, 25% ); }
+        &_s075 { background-color: lighten( $accent, 20% ); }
+        &_s07,
+        &_s070 { background-color: lighten( $accent, 15% ); }
+        &_s065 { background-color: lighten( $accent, 10% ); }
+        &_s06,
+        &_s060 { background-color: lighten( $accent, 5% ); }
+        &_s055 { background-color: $accent; }
+        &_s05,
+        &_s050 { background-color: darken( $accent, 5% ); } // 50%
+        &_s045 { background-color: darken( $accent, 10% ); }
+        &_s04,
+        &_s040 { background-color: darken( $accent, 15% ); }
+        &_s035 { background-color: darken( $accent, 20% ); }
+        &_s03,
+        &_s030 { background-color: darken( $accent, 25% ); }
+        &_s025 { background-color: darken( $accent, 30% ); }
+        &_s02,
+        &_s020 { background-color: darken( $accent, 35% ); }
+        &_s015 { background-color: darken( $accent, 40% ); }
+        &_s01,
+        &_s010 { background-color: darken( $accent, 45% ); }
+        &_s005 { background-color: darken( $accent, 50% ); }
+        // black
+        &_s0,
+        &_s00,
+        &_s000 { background-color: $black; }
+    }
+    .alt {
+        background-color: $alt;
+        // white
+        &_s1,
+        &_s10,
+        &_s100 { background-color: $white }
+        // shades
+        &_s095 { background-color: lighten( $alt, 40% ); }
+        &_s09,
+        &_s090 { background-color: lighten( $alt, 35% ); }
+        &_s085 { background-color: lighten( $alt, 30% ); }
+        &_s08,
+        &_s080 { background-color: lighten( $alt, 25% ); }
+        &_s075 { background-color: lighten( $alt, 20% ); }
+        &_s07,
+        &_s070 { background-color: lighten( $alt, 15% ); }
+        &_s065 { background-color: lighten( $alt, 10% ); }
+        &_s06,
+        &_s060 { background-color: lighten( $alt, 5% ); }
+        &_s055 { background-color: $alt; }
+        &_s05,
+        &_s050 { background-color: darken( $alt, 5% ); } // 50%
+        &_s045 { background-color: darken( $alt, 10% ); }
+        &_s04,
+        &_s040 { background-color: darken( $alt, 15% ); }
+        &_s035 { background-color: darken( $alt, 20% ); }
+        &_s03,
+        &_s030 { background-color: darken( $alt, 25% ); }
+        &_s025 { background-color: darken( $alt, 30% ); }
+        &_s02,
+        &_s020 { background-color: darken( $alt, 35% ); }
+        &_s015 { background-color: darken( $alt, 40% ); }
+        &_s01,
+        &_s010 { background-color: darken( $alt, 45% ); }
+        &_s005 { background-color: darken( $alt, 50% ); }
+        // black
+        &_s0,
+        &_s00,
+        &_s000 { background-color: $black; }
+    }
+
+    // logo
+    #logo {
+        width: 65px;
+        height: 65px;
+        margin: 5px;
+    }
+
+    // links
+    a,
+    a.icon-link {
+        color: $primary;
+        &:visited {
+            color: darken( $primary, 20% );
+        }
+        &:hover {
+            color: lighten( $primary, 25% );
+        }
+        &:active {
+            color: $accent;
+        }
+    }
+
+    a.icon-link svg,
+    a.btn svg {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+    a.btn svg {
+        margin-right: .75rem;
+    }
+
+    // buttons
+    a.btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        color: #FFFFFF;
+        font-size: 1rem;
+        font-weight: 100;
+        padding: .75rem 0;
+        background-color: rgba(255, 255, 255, 0);
+        border: solid $primary 1px;
+        text-decoration: none;
+        cursor: pointer;
+        color: $primary;
+        &:visited {
+            color: darken( $primary, 30% );
+            border: solid darken( $primary, 30% ) 1px;
+        }
+        &:hover {
+            color: lighten( $primary, 25% );
+            border: solid lighten( $primary, 25% ) 1px;
+        }
+        &:active {
+            color: darken( $alt, 25% );
+            border: solid darken( $alt, 25% ) 1px;
+        }
+    }
+
+    // alert
+    .alert { 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        padding: .75rem 0;
+    }
+    .alert a.btn {
+        margin: 0 .5rem 0;
+        padding: .5rem .75rem;
+    }
+
+    // call-to-action
+
+ }
