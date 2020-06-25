@@ -23,7 +23,7 @@ $primary: adjust-hue( $alt, 180 );
 $secondary: adjust-hue( $primary, 260 );
 $accent: adjust-hue( $secondary, 180 );
  
-body.blog {
+.blog {
 
     // body background
     background-color: $white;
@@ -32,7 +32,6 @@ body.blog {
     .alert {
         font-family: 'Raleway', sans-serif;
         font-weight: 200;
-        font-variation-settings: 'wdth' 110;
     }
     h1, h2, h3, h4, h5, h6 {
         font-family: 'Dosis', sans-serif;
@@ -42,8 +41,6 @@ body.blog {
         font-family: 'Raleway', sans-serif;
         font-size: 1rem;
         font-weight: 300;
-        font-variation-settings: 'wdth' 100;
-        font-optical-sizing: auto;
     }
 
     // font variations
