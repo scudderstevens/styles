@@ -349,6 +349,8 @@ template {
 /* 
  * Accessiblity
  * ==========
+ * base/accessiblity
+ *
  * screen-reader-text
  */
 /* Text meant only for screen readers */
@@ -387,6 +389,7 @@ template {
 /*
  * Variables
  * =================
+ * abstracts/variables
  */
 /* Monochromic */
 .red {
@@ -693,7 +696,11 @@ body {
  * ==========
  * layout/grid
  */
-/* Mixins */
+/*
+ * Mixins
+ * =================
+ * abstracts/mixins
+ */
 /*
  * Define media breakpoints map
  * ==========
@@ -749,6 +756,10 @@ body {
 .grid-2-2,
 .grid-1-1 {
   width: 100%;
+}
+
+.full-height {
+  height: 100vh;
 }
 
 @media (max-width: 375px) {
@@ -1351,9 +1362,11 @@ body {
 }
 
 .grid-align-center, .grid-vert-center {
+  margin: auto 0;
   align-content: center;
 }
 
 .grid-justify-center, .grid-hori-center {
+  margin: 0 auto;
   justify-content: center;
 }

@@ -545,17 +545,17 @@
 }
 
 .me .iso-background__repeating {
-  background-image: url("../../assets/iso__grid-background.png");
+  background-image: url("https://cdn.jsdelivr.net/gh/scudderstevens/styles@master/latest/assets/iso__grid-background.png");
   background-repeat: repeat;
 }
 
 .me .iso-background__photo {
-  background-image: url("../../assets/iso__grid-pattern-photo-detail.jpg");
+  background-image: url("https://cdn.jsdelivr.net/gh/scudderstevens/styles@master/latest/assets/iso__grid-pattern-photo-detail.jpg");
   background-repeat: no-repeat;
 }
 
 .me .iso-background__mitsubishis {
-  background-image: url("../../assets/iso__grid-Mitsubishis.jpg");
+  background-image: url("https://cdn.jsdelivr.net/gh/scudderstevens/styles@master/latest/assets/iso__grid-Mitsubishis.jpg");
   background-repeat: no-repeat;
 }
 

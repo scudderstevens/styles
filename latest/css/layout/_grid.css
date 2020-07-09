@@ -669,9 +669,11 @@
 }
 
 .grid-align-center, .grid-vert-center {
+  margin: auto 0;
   align-content: center;
 }
 
 .grid-justify-center, .grid-hori-center {
+  margin: 0 auto;
   justify-content: center;
 }

@@ -430,20 +430,20 @@
     }
 }
 
-
-
 // responsive containers
 .grid {
     display: flex;
     &-align,
     &-vert {
         &-center {
+            margin: auto 0;
             align-content: center;
         }
     }
     &-justify,
     &-hori {
         &-center {
+            margin: 0 auto;
             justify-content: center;
         }
     }
