@@ -9,7 +9,7 @@
         <title>Scudder Stevens</title>
     </head>
 
-    <body class="main me">
+    <body id="top" class="main me">
 
         <div class="grid-container-row primary_s060 nav-bar">
             <div class="grid-container-col">
@@ -25,6 +25,9 @@
                 <div class="grid-container-col grid__fixed-width">
                     <h1>Style Guide</h1>
                     <p class="micro">Design & Layout definitions</p>
+                </div>
+                <div class="grid-container-col grid__fixed-width">
+                    <a class="smooth-scroll" href="#paragraph">paragraph</a>
                 </div>
             </div>
 
@@ -108,7 +111,7 @@
                 </div>
             </div>
 
-            <div class="grid-container-row mono_s095">
+            <div id="paragraph" class="grid-container-row mono_s095">
                 <div class="grid-container-row grid__fixed-width">
                     <div class="grid-container-col grid-1-12"></div>
                     <div class="grid-container-col grid-2-12">
@@ -124,14 +127,17 @@
                     <p>p tag</p>
                 </div>
                 <div class="grid-container-col grid-2-3">
-                    <p class="pico">pico paragraph</p>
-                    <p class="nano">nano paragraph</p>
-                    <p class="micro">micro paragraph</p>
-                    <p>standard paragraph</p>
-                    <p class="mega">mega paragraph</p>
-                    <p class="giga">giga paragraph</p>
-                    <p class="tera">tera paragraph</p>
+                    <p class="pico"><em>pico</em> paragraph</p>
+                    <p class="nano"><em>nano</em> paragraph</p>
+                    <p class="micro"><em>micro</em> paragraph</p>
+                    <p><strong>standard</strong> paragraph</p>
+                    <p class="mega"><em>mega</em> paragraph</p>
+                    <p class="giga"><em>giga</em> paragraph</p>
+                    <p class="tera"><em>tera</em> paragraph</p>
                 </div>
+            </div>
+            <div class="grid-container-row grid__fixed-width">
+                <a class="smooth-scroll" href="#top">return to top</a>
             </div>
 
             <div class="grid-container-row mono_s095">
@@ -638,5 +644,6 @@
         </footer>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="latest/js/smooth-scroll.js"></script>
     </body>
 </html>

@@ -6,8 +6,15 @@ These Styles are build using [SASS](https://sass-lang.com/) and follow the best 
 * [variable fonts](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide "mozilla documentation")
 
 ### Frameworks and Reference
+* [html.systems | reference : design component examples](http://html.systems/ "design component examples and code")
 * [get.foundation | getting started : documentation](https://get.foundation/sites/docs/index.html)
 * [getbootstrap.com | getting started : documentation](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
+
+### Icons
+* [feathericons.com | official website ](https://feathericons.com/)
+
+### Buttons
+* [medium.com | post : button best practices](https://medium.com/nextux/design-better-buttons-6b64eb7f13bc)
 
 ### BEM
 * [getbem.com : resource](http://getbem.com/)
