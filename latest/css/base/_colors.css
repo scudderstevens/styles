@@ -6,6 +6,7 @@
 /*
  * Variables
  * =================
+ * abstracts/variables
  */
 /* Monochromic */
 .red {
@@ -34,6 +35,10 @@
 
 .mono_s09, .mono_s090 {
   background-color: #e6e6e6;
+}
+
+.mono_s090a85 {
+  background-color: rgba(230, 230, 230, 0.85);
 }
 
 .mono_s085 {

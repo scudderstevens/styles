@@ -91,37 +91,37 @@ $accent: adjust-hue( $secondary, 180 );
         font-weight: 400;
         &:visited {
             color: darken( $primary, 15% );
-            font-weight: 350;
         }
         &:hover {
             color: darken( $primary, 10% );
             text-decoration: underline;
-            font-weight: 450;
         }
         &:active {
             color: $alt;
             text-decoration: underline;
-            font-weight: 500;
         }
+    }
+    a.icon-link svg {
+        margin-bottom: -.25rem;
     }
 
     // M (larger)
     p.mega, a.mega {
-        font-weight: 350; 
+        font-weight: 350;
         font-size: 1.25rem;
     }
     p.giga, a.giga {
-        font-weight: 400; 
+        font-weight: 400;
         font-size: 1.5rem;
     }
     p.tera, a.tera {
-        font-weight: 450; 
+        font-weight: 450;
         font-size: 1.75rem;
     }
 
     // µ (smaller)
     p.micro, a.micro {
-        font-weight: 250; 
+        font-weight: 250;
         font-size: .85rem;
     } 
     p.nano, a.nano {
@@ -129,8 +129,11 @@ $accent: adjust-hue( $secondary, 180 );
         font-size: .65rem;
     }
     p.pico, a.pico {
-        font-weight: 150; 
+        font-weight: 150;
         font-size: .15rem;
+    }
+    p strong {
+        font-weight: 450;
     }
 
     // colors
@@ -303,19 +306,28 @@ $accent: adjust-hue( $secondary, 180 );
     }
 
     // isometric backgrounds
-    .iso-background__repeating {
-        background-image: url("https://cdn.jsdelivr.net/gh/scudderstevens/styles@master/latest/assets/iso__grid-background.png");
+    .iso-background__repeating-grid {
+        background-image: url("https://ssme.s3.filebase.com/theme/assets/iso__grid-repeating-background.png");
         background-repeat: repeat;
     }
     .iso-background__photo {
-        background-image: url("https://cdn.jsdelivr.net/gh/scudderstevens/styles@master/latest/assets/iso__grid-pattern-photo-detail.jpg");
+        background-image: url("https://ssme.s3.filebase.com/theme/assets/iso__grid-pattern-photo-detail-1500w.jpg");
         background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
     .iso-background__mitsubishis {
-        background-image: url("https://cdn.jsdelivr.net/gh/scudderstevens/styles@master/latest/assets/iso__grid-Mitsubishis.jpg");
+        background-image: url("https://ssme.s3.filebase.com/theme/assets/iso__grid-Mitsubishis-1500w.jpg");
         background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 
+    .iso-background__repeating-grid.fixed,
+    .iso-background__photo.fixed,
+    .iso-background__mitsubishis.fixed {
+        background-attachment: fixed;
+    }
 
     // buttons
     a.btn {
@@ -326,7 +338,7 @@ $accent: adjust-hue( $secondary, 180 );
         -moz-border-radius: 5px;
         border-radius: 5px;
         font-size: 1rem;
-        font-weight: 100;
+        font-weight: 450;
         cursor: pointer;
     }
 
@@ -406,9 +418,9 @@ $accent: adjust-hue( $secondary, 180 );
         margin-right: .75rem;
     }
 
-    // bars
-    .nav-bar,
-    .cta-bar_alert { 
+    // ribbons
+    .ribbon_nav,
+    .ribbon_alert { 
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -416,10 +428,20 @@ $accent: adjust-hue( $secondary, 180 );
         padding: .5rem;
     }
 
-    .grid__fixed-width .nav-bar,
-    .grid__fixed-width .cta-bar_alert {
+    .grid__fixed-width .ribbon_nav,
+    .grid__fixed-width .ribbon_alert {
         padding: .5rem 0;
     }
+
+    .ribbon_alert p {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.85rem;
+    }
+    .ribbon_alert p strong {
+        font-weight: 600;
+    }
+
     // footer
     footer p {
         color: $white;
