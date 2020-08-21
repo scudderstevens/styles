@@ -12,10 +12,10 @@ A design philosophy that focuses on establishing a logical structure (Design Sys
 
 ### Applied
 
-**B.**EM - Universl building **b**locks
+**B.** E. M. - Universal building **b**locks
 [main.min.css](https://min.gitcdn.link/repo/scudderstevens/styles/master/latest/css/main.min.css "universal building blocks")
 
-B.**E.M.** - Platform or property specific **e**lements and **m**odifcations of `main`, creating `me` _theme_.
+B. **E. M.** - Platform or property specific **e**lements and **m**odifcations of `main`, creating `me` _theme_.
 [me.min.css](https://min.gitcdn.link/repo/scudderstevens/styles/master/latest/css/themes/me.min.css "scudderstevens.me")
 
 ## Evolution
@@ -46,7 +46,7 @@ styles/
 ~~~
 
 #### `latest/`
-The directory containing the most current version of a style undergoing development and testing. Using this style in a solution is risky, it is better to use a particular version to better manage updates.
+The directory containing the most current version of a style undergoing development and testing. Using this style in a solution is risky, it is better to use a particular version to better manage updates. Learn more about the current version of [latest](./latest/README.md).
 
 #### `v#/`
 The directory containing the version # of a style, the highest number being the most recient public version.
