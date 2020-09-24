@@ -11,7 +11,10 @@ These Styles are build using [SASS](https://sass-lang.com/) and follow the best 
 * [getbootstrap.com | getting started : documentation](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
 
 ### Icons
-* [feathericons.com | official website ](https://feathericons.com/)
+* [feathericons.com | official website](https://feathericons.com/)
+
+### Images
+* [icolorpalette.com | generate from image](https://icolorpalette.com/color-palette-from-images)
 
 ### Buttons
 * [medium.com | post : button best practices](https://medium.com/nextux/design-better-buttons-6b64eb7f13bc)
@@ -26,6 +29,8 @@ These Styles are build using [SASS](https://sass-lang.com/) and follow the best 
 * [get.foundation | sass functions : documentation](https://get.foundation/sites/docs/sass-functions.html)
 
 ### MarkDown
+* [markdownguide.org | MarkDown : documentation](https://www.markdownguide.org/)
+
 Here are a few quick MD notes, mostly used by me as a reminder but can get you started.
 
 Paragraphs are separated by a blank line.

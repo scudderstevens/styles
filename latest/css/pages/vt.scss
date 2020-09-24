@@ -1,0 +1,75 @@
+/*
+* VerdantTongu.es
+* ===========
+* pages/vt.scss
+*/
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+ 
+.vt {
+
+    // __rethink-reshape
+    &__rethink-reshape {
+
+        .int-vert__background {
+            background-image: url('https://verdant.s3.filebase.com/content/rethink-reshape/Zeitz-MoCAA_internal07-4000w5832h.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    
+        // Zeitz MoCAA, Zhaka Zulu - Logo
+        @include xs {
+            .zeitz-mocca_animated-logo {
+                background-image: url('https://verdant.s3.filebase.com/content/rethink-reshape/Shaka-Zulu_ani-125w.gif');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                width: 65px;
+                height: 65px;
+            }
+        }
+        @include sm {
+            .zeitz-mocca_animated-logo {
+                background-image: url('https://verdant.s3.filebase.com/content/rethink-reshape/Shaka-Zulu_ani-250w.gif');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                width: 125px;
+                height: 125px;
+            }
+        }
+        @include md {
+            .zeitz-mocca_animated-logo {
+                background-image: url('https://verdant.s3.filebase.com/content/rethink-reshape/Shaka-Zulu_ani-250w.gif');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                width: 125px;
+                height: 125px;
+            }
+        }
+        @include lg {
+            .zeitz-mocca_animated-logo {
+                background-image: url('https://verdant.s3.filebase.com/content/rethink-reshape/Shaka-Zulu_ani-500w.gif');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                width: 250px;
+                height: 250px;
+            }
+        }
+        @include xl {
+            .zeitz-mocca_animated-logo {
+                background-image: url('https://verdant.s3.filebase.com/content/rethink-reshape/Shaka-Zulu_ani-500w.gif');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                width: 500px;
+                height: 500px;
+            }
+        }
+    }
+    // END - __rethink-reshape
+    
+}

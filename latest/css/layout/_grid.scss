@@ -19,14 +19,14 @@
 .grid-4-4,
 .grid-3-3,       
 .grid-2-2,
-.grid-1-1 {  width: 100%; }
+.grid-1-1 { width: 100%; }
 
 .full-height {
     height: 100vh;
 }
 
 // supports 2, even #rd - columns
-@include respond-to('XS') {
+@include xs {
     .grid-11-12,
     .grid-10-12,
     .grid-10-11,
@@ -115,7 +115,7 @@
     }
 }
 // supports 4, even #rd - columns
-@include respond-to('SM') {
+@include sm {
     .grid-11-12,
     .grid-10-12,
     .grid-10-11,
@@ -203,7 +203,7 @@
     }
 }
 // supports 8 columns
-@include respond-to('MD') {
+@include md {
     .grid-11-12,
     .grid-10-12,
     .grid-10-11,
@@ -295,7 +295,7 @@
     }
 }
 // supports 12, odd & even #rd - columns
-@include respond-to('LG') {
+@include lg {
     .grid-11-12 { width: 91.666%; }
     .grid-10-11 { width: 90.909%; }
     .grid-9-10 { width: 90%; }
@@ -362,7 +362,7 @@
         }
     }
 }
-@include respond-to('XL') {
+@include xl {
     .grid-11-12 { width: 91.666%; }
     .grid-10-11 { width: 90.909%; }
     .grid-9-10 { width: 90%; }
@@ -446,5 +446,21 @@
             margin: 0 auto;
             justify-content: center;
         }
+        &-right {
+            margin-right: 0;
+            margin-left: auto;
+            justify-content: right;
+        }
+        &-left {
+            margin-right: auto;
+            margin-left: 0;
+            justify-content: right;
+        }
+    }
+    &-wrap {
+        flex-wrap: wrap;
+    }
+    &-nowrap {
+        flex-wrap: nowrap;
     }
 }

@@ -855,7 +855,7 @@ body {
   }
 }
 
-@media (min-width: 376px) {
+@media (max-width: 575px), and {
   .grid-11-12,
   .grid-10-12,
   .grid-10-11,
@@ -947,7 +947,7 @@ body {
   }
 }
 
-@media (min-width: 576px) {
+@media (max-width: 960px), and {
   .grid-11-12,
   .grid-10-12,
   .grid-10-11,
@@ -1053,7 +1053,7 @@ body {
   }
 }
 
-@media (min-width: 961px) {
+@media (max-width: 1880px), and {
   .grid-11-12 {
     width: 91.666%;
   }
@@ -1373,4 +1373,24 @@ body {
 .grid-justify-center, .grid-hori-center {
   margin: 0 auto;
   justify-content: center;
+}
+
+.grid-justify-right, .grid-hori-right {
+  margin-right: 0;
+  margin-left: auto;
+  justify-content: right;
+}
+
+.grid-justify-left, .grid-hori-left {
+  margin-right: auto;
+  margin-left: 0;
+  justify-content: right;
+}
+
+.grid-wrap {
+  flex-wrap: wrap;
+}
+
+.grid-nowrap {
+  flex-wrap: nowrap;
 }

@@ -1,0 +1,440 @@
+/*
+ * VerdantTongu.es
+ * ===========
+ * themes/verdant.scss
+ */
+ @import "../abstracts/mixins";
+ @import "../abstracts/variables";
+ 
+ // fonts
+ @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@523&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ 
+ // color vars
+ $alt:  #3cdf65;
+ $primary: adjust-hue( $alt, 180 );
+ $secondary: adjust-hue( $primary, 260 );
+ $accent: adjust-hue( $secondary, 180 );
+  
+ .vt {
+    margin: 0;
+    padding: 0;
+     // body background
+     background-color: $white;
+ 
+     // fonts
+     .alert {
+         font-family: 'Raleway', sans-serif;
+         font-weight: 200;
+     }
+     h1, h2, h3, h4, h5, h6 {
+         font-family: 'Dosis', sans-serif;
+         font-optical-sizing: auto;
+     }
+     p, a {
+         font-family: 'Raleway', sans-serif;
+         font-size: 1rem;
+         font-weight: 300;
+     }
+ 
+     // font variations
+     h1 {
+         font-size: 2rem;
+         font-weight: 500;
+         font-variation-settings: 'wdth' 90;
+         color: darken( $secondary, 50% );
+     }
+     h2 {
+         font-size: 1.75rem;
+         font-weight: 450;
+         font-variation-settings: 'wdth' 90;
+         color: darken( $secondary, 45% );
+     }
+     h3 {
+         font-size: 1.5rem;
+         font-weight: 400;
+         font-variation-settings: 'wdth' 90;
+         color: darken( $secondary, 40% );
+     }
+     h4 {
+         font-size: 1.25rem;
+         font-weight: 350;
+         font-variation-settings: 'wdth' 90;
+         color: darken( $secondary, 35% );
+     }
+     h5 {
+         font-size: 1rem;
+         font-weight: 300;
+         font-variation-settings: 'wdth' 100;
+         color: darken( $secondary, 30% );
+     } 
+     h6 {
+         font-size: .75rem;
+         font-weight: 250;
+         font-variation-settings: 'wdth' 110;
+         color: darken( $secondary, 25% );
+     }
+ 
+     // links
+     a,
+     a.icon-link {
+         color: darken( $primary, 5% );
+         text-decoration: none;
+         font-weight: 400;
+         &:visited {
+             color: darken( $primary, 15% );
+         }
+         &:hover {
+             color: darken( $primary, 10% );
+             text-decoration: underline;
+         }
+         &:active {
+             color: $alt;
+             text-decoration: underline;
+         }
+     }
+     a.icon-link svg {
+         margin-bottom: -.25rem;
+     }
+ 
+     // M (larger)
+     p.mega, a.mega {
+         font-weight: 350;
+         font-size: 1.25rem;
+     }
+     p.giga, a.giga {
+         font-weight: 400;
+         font-size: 1.5rem;
+     }
+     p.tera, a.tera {
+         font-weight: 450;
+         font-size: 1.75rem;
+     }
+ 
+     // µ (smaller)
+     p.micro, a.micro {
+         font-weight: 250;
+         font-size: .85rem;
+     } 
+     p.nano, a.nano {
+         font-weight: 200;
+         font-size: .65rem;
+     }
+     p.pico, a.pico {
+         font-weight: 150;
+         font-size: .15rem;
+     }
+     p strong {
+         font-weight: 450;
+     }
+ 
+     // colors
+     .primary {
+         background-color: $primary;
+         // white
+         &_s1,
+         &_s10,
+         &_s100 { background-color: $white }
+         // shades
+         &_s095 { background-color: lighten( $primary, 40% ); }
+         &_s09,
+         &_s090 { background-color: lighten( $primary, 35% ); }
+         &_s085 { background-color: lighten( $primary, 30% ); }
+         &_s08,
+         &_s080 { background-color: lighten( $primary, 25% ); }
+         &_s075 { background-color: lighten( $primary, 20% ); }
+         &_s07,
+         &_s070 { background-color: lighten( $primary, 15% ); }
+         &_s065 { background-color: lighten( $primary, 10% ); }
+         &_s06,
+         &_s060 { background-color: lighten( $primary, 5% ); }
+         &_s055 { background-color: $primary; }
+         &_s05,
+         &_s050 { background-color: darken( $primary, 5% ); } // 50%
+         &_s045 { background-color: darken( $primary, 10% ); }
+         &_s04,
+         &_s040 { background-color: darken( $primary, 15% ); }
+         &_s035 { background-color: darken( $primary, 20% ); }
+         &_s03,
+         &_s030 { background-color: darken( $primary, 25% ); }
+         &_s025 { background-color: darken( $primary, 30% ); }
+         &_s02,
+         &_s020 { background-color: darken( $primary, 35% ); }
+         &_s015 { background-color: darken( $primary, 40% ); }
+         &_s01,
+         &_s010 { background-color: darken( $primary, 45% ); }
+         &_s005 { background-color: darken( $primary, 50% ); }
+         // black
+         &_s0,
+         &_s00,
+         &_s000 { background-color: $black; }
+     }
+     .secondary {
+         background-color: $secondary;
+         // white
+         &_s1,
+         &_s10,
+         &_s100 { background-color: $white }
+         // shades
+         &_s095 { background-color: lighten( $secondary, 40% ); }
+         &_s09,
+         &_s090 { background-color: lighten( $secondary, 35% ); }
+         &_s085 { background-color: lighten( $secondary, 30% ); }
+         &_s08,
+         &_s080 { background-color: lighten( $secondary, 25% ); }
+         &_s075 { background-color: lighten( $secondary, 20% ); }
+         &_s07,
+         &_s070 { background-color: lighten( $secondary, 15% ); }
+         &_s065 { background-color: lighten( $secondary, 10% ); }
+         &_s06,
+         &_s060 { background-color: lighten( $secondary, 5% ); }
+         &_s055 { background-color: $secondary; }
+         &_s05,
+         &_s050 { background-color: darken( $secondary, 5% ); } // 50%
+         &_s045 { background-color: darken( $secondary, 10% ); }
+         &_s04,
+         &_s040 { background-color: darken( $secondary, 15% ); }
+         &_s035 { background-color: darken( $secondary, 20% ); }
+         &_s03,
+         &_s030 { background-color: darken( $secondary, 25% ); }
+         &_s025 { background-color: darken( $secondary, 30% ); }
+         &_s02,
+         &_s020 { background-color: darken( $secondary, 35% ); }
+         &_s015 { background-color: darken( $secondary, 40% ); }
+         &_s01,
+         &_s010 { background-color: darken( $secondary, 45% ); }
+         &_s005 { background-color: darken( $secondary, 50% ); }
+         // black
+         &_s0,
+         &_s00,
+         &_s000 { background-color: $black; }
+     }
+     .accent {
+         background-color: $accent;
+         // white
+         &_s1,
+         &_s10,
+         &_s100 { background-color: $white }
+         // shades
+         &_s095 { background-color: lighten( $accent, 40% ); }
+         &_s09,
+         &_s090 { background-color: lighten( $accent, 35% ); }
+         &_s085 { background-color: lighten( $accent, 30% ); }
+         &_s08,
+         &_s080 { background-color: lighten( $accent, 25% ); }
+         &_s075 { background-color: lighten( $accent, 20% ); }
+         &_s07,
+         &_s070 { background-color: lighten( $accent, 15% ); }
+         &_s065 { background-color: lighten( $accent, 10% ); }
+         &_s06,
+         &_s060 { background-color: lighten( $accent, 5% ); }
+         &_s055 { background-color: $accent; }
+         &_s05,
+         &_s050 { background-color: darken( $accent, 5% ); } // 50%
+         &_s045 { background-color: darken( $accent, 10% ); }
+         &_s04,
+         &_s040 { background-color: darken( $accent, 15% ); }
+         &_s035 { background-color: darken( $accent, 20% ); }
+         &_s03,
+         &_s030 { background-color: darken( $accent, 25% ); }
+         &_s025 { background-color: darken( $accent, 30% ); }
+         &_s02,
+         &_s020 { background-color: darken( $accent, 35% ); }
+         &_s015 { background-color: darken( $accent, 40% ); }
+         &_s01,
+         &_s010 { background-color: darken( $accent, 45% ); }
+         &_s005 { background-color: darken( $accent, 50% ); }
+         // black
+         &_s0,
+         &_s00,
+         &_s000 { background-color: $black; }
+     }
+     .alt {
+         background-color: $alt;
+         // white
+         &_s1,
+         &_s10,
+         &_s100 { background-color: $white }
+         // shades
+         &_s095 { background-color: lighten( $alt, 40% ); }
+         &_s09,
+         &_s090 { background-color: lighten( $alt, 35% ); }
+         &_s085 { background-color: lighten( $alt, 30% ); }
+         &_s08,
+         &_s080 { background-color: lighten( $alt, 25% ); }
+         &_s075 { background-color: lighten( $alt, 20% ); }
+         &_s07,
+         &_s070 { background-color: lighten( $alt, 15% ); }
+         &_s065 { background-color: lighten( $alt, 10% ); }
+         &_s06,
+         &_s060 { background-color: lighten( $alt, 5% ); }
+         &_s055 { background-color: $alt; }
+         &_s05,
+         &_s050 { background-color: darken( $alt, 5% ); } // 50%
+         &_s045 { background-color: darken( $alt, 10% ); }
+         &_s04,
+         &_s040 { background-color: darken( $alt, 15% ); }
+         &_s035 { background-color: darken( $alt, 20% ); }
+         &_s03,
+         &_s030 { background-color: darken( $alt, 25% ); }
+         &_s025 { background-color: darken( $alt, 30% ); }
+         &_s02,
+         &_s020 { background-color: darken( $alt, 35% ); }
+         &_s015 { background-color: darken( $alt, 40% ); }
+         &_s01,
+         &_s010 { background-color: darken( $alt, 45% ); }
+         &_s005 { background-color: darken( $alt, 50% ); }
+         // black
+         &_s0,
+         &_s00,
+         &_s000 { background-color: $black; }
+     }
+ 
+     // logo
+     #logo {
+         width: 65px;
+         height: 65px;
+         margin: 5px;
+     }
+ 
+     // isometric backgrounds
+     .iso-background__repeating-grid {
+         background-image: url("https://ssme.s3.filebase.com/theme/assets/iso__grid-repeating-background.png");
+         background-repeat: repeat;
+     }
+     .iso-background__photo {
+         background-image: url("https://ssme.s3.filebase.com/theme/assets/iso__grid-pattern-photo-detail-1500w.jpg");
+         background-repeat: no-repeat;
+         background-position: center;
+         background-size: cover;
+     }
+     .iso-background__mitsubishis {
+         background-image: url("https://ssme.s3.filebase.com/theme/assets/iso__grid-Mitsubishis-1500w.jpg");
+         background-repeat: no-repeat;
+         background-position: center;
+         background-size: cover;
+     }
+ 
+     .iso-background__repeating-grid.fixed,
+     .iso-background__photo.fixed,
+     .iso-background__mitsubishis.fixed {
+         background-attachment: fixed;
+     }
+ 
+     // buttons
+     a.btn {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         -webkit-border-radius: 5px;
+         -moz-border-radius: 5px;
+         border-radius: 5px;
+         font-size: 1rem;
+         font-weight: 450;
+         cursor: pointer;
+     }
+ 
+     a.btn {
+         color: darken( $primary, 30% );
+         background-color: lighten( $primary, 47% );
+         border: solid lighten( $primary, 30% ) 1px;
+         text-decoration: none;
+         &:visited {
+             color: darken( $primary, 30% );
+             border: solid darken( $primary, 30% ) 1px;
+         }
+         &:hover {
+             color: darken( $primary, 10% );
+             border: solid lighten( $primary, 25% ) 1px;
+             text-decoration: underline;
+         }
+         &:active {
+             color: darken( $alt, 10% );
+             border: solid darken( $alt, 25% ) 1px;
+             text-decoration: underline;
+         }
+     }
+ 
+     a.btn-nav_back,
+     a.btn-sidebar_toggle-menu,
+     a.btn-alert_confirm {
+         color: darken( $primary, 30% );
+         background-color: lighten( $primary, 47% );
+         border: solid lighten( $primary, 30% ) 1px;
+         &:visited {
+             color: darken( $primary, 10% );
+             background-color: $white;
+             border: solid darken( $primary, 30% ) 1px;
+         }
+         &:hover {
+             color: $white;
+             background-color: darken( $primary, 10% );
+             border: solid darken( $primary, 30% ) 1px;
+         }
+         &:active {
+             color: $white; 
+             background-color: darken( $alt, 10% );
+             border: solid darken( $alt, 25% ) 1px;
+         }
+     }
+ 
+     a.btn-alert_confirm {
+         background-color: lighten( $alt, 47% );
+         border: solid lighten( $alt, 30% ) 1px;
+     }
+ 
+     a.icon-link svg,
+     a.btn svg {
+         width: 1.25rem;
+         height: 1.25rem;
+     }
+ 
+     a.btn-nav_back,
+     a.btn-sidebar_toggle-menu {
+         padding: .75rem;
+     }
+ 
+     a.btn-nav_main,
+     a.btn-alert_confirm {
+         margin: .5rem .75rem;
+         padding: .75rem .5rem;
+     }
+ 
+     .grid__fixed-width a.btn-nav_back,
+     .grid__fixed-width a.btn-sidebar_toggle-menu {
+         margin: .5rem 0;
+     }
+ 
+     a.btn-nav_main svg,
+     a.btn-alert_confirm svg {
+         margin-right: .75rem;
+     }
+ 
+     // ribbons
+     .ribbon_nav,
+     .ribbon_alert { 
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         text-align: center;
+         padding: .5rem;
+     }
+ 
+     .grid__fixed-width .ribbon_nav,
+     .grid__fixed-width .ribbon_alert {
+         padding: .5rem 0;
+     }
+ 
+     .ribbon_alert p {
+         font-size: 1rem;
+         font-weight: 400;
+         line-height: 1.85rem;
+     }
+     .ribbon_alert p strong {
+         font-weight: 600;
+     }
+ 
+     // footer
+     footer p {
+         color: $white;
+     }
+  }

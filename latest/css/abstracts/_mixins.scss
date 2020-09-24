@@ -13,12 +13,45 @@
  * 'LG': Supports 12 column grid
  * 'XL': Supports 12 column grid
  */
+
+$sm-width: 376px;
+$md-width: 576px;
+$lg-width: 961px;
+$extraLarge-width: 1181px;
+
+@mixin xs {
+	@media (max-width: #{$sm-width - 1px}) {
+		@content;
+	}
+}
+@mixin sm {
+	@media (min-width: #{$sm-width}) and (max-width: #{$md-width - 1px}) {
+		@content;
+	}
+}
+@mixin md {
+	@media (min-width: #{$md-width}) and (max-width: #{$lg-width - 1px}) {
+		@content;
+	}
+}
+@mixin lg {
+	@media (min-width: #{$lg-width}) and (max-width: #{$extraLarge-width - 1px}) {
+		@content;
+	}
+
+}
+@mixin xl {
+	@media (min-width: #{$extraLarge-width}) {
+		@content;
+	}
+}
+
 $breakpoints: (
-	'XS': (max-width : 375px), 
-	'SM': (min-width : 376px),
-	'MD': (min-width : 576px),
-	'LG': (min-width : 961px),
-	'XL': (min-width : 1181px),
+	'XS': (max-width: 375px), 
+	'SM': (min-width: 376px),
+	'MD': (min-width: 576px),
+	'LG': (min-width: 961px),
+	'XL': (min-width: 1181px)
 );
 
 /* Responsive breakpoint manager
@@ -37,7 +70,7 @@ $breakpoints: (
 	  );
 	  @media #{$query} {
 		@content;
-	  }
+	}
 	} @else {
 	  @error 'No value found for `#{$breakpoint}`. '
 		   + 'Please make sure it is defined in `$breakpoints` map.';
