@@ -27,11 +27,11 @@ version/
 |   |
 |   `– *.js         # JavaScript files
 |
-`– README.md
+`– index.md
 ~~~
 
 ## Global README & License
-Currently you are reading a README file for this (_latest_) version of styles, see the [global README](../README.md) file for additional details. [MIT License](../LICENSE)
+Currently you are reading a README file for this (_latest_) version of styles, see the [global README](../index.md) file for additional details. [MIT License](../LICENSE)
 
 ## CDN Styles
 This framework and all theme files can be pulled from a CDN for production level solutions using 
