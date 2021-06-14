@@ -1255,6 +1255,10 @@ a.micro {
   stroke: #ffffff;
 }
 
+.me footer .copyright {
+  margin: auto 0 auto auto;
+}
+
 @media (min-width: 576px) and (max-width: 960px) {
   .me footer .profile-wrapper {
     width: 33.333%;

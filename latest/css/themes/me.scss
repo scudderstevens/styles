@@ -914,6 +914,9 @@ $accent: adjust-hue( $secondary, 180 );
                 }
             }
         }
+        .copyright {
+            margin: auto 0 auto auto;
+        }
     }
 
     @include md {
