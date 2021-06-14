@@ -964,6 +964,16 @@ a.micro {
   fill: #ffffff;
 }
 
+.me .project-header svg.current .svg-fill-elem,
+.me .project-header svg.current .svg-line-elem, .me .project-features svg.current .svg-fill-elem,
+.me .project-features svg.current .svg-line-elem, .me .project-built-with svg.current .svg-fill-elem,
+.me .project-built-with svg.current .svg-line-elem, .me .project-conclusion svg.current .svg-fill-elem,
+.me .project-conclusion svg.current .svg-line-elem {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2px;
+}
+
 .me .project-header .dropdown {
   width: 20px;
   height: 20px;

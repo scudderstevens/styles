@@ -661,6 +661,12 @@ $accent: adjust-hue( $secondary, 180 );
                 .svg-fill-elem {
                     fill: $white;
                 }
+                .svg-fill-elem,
+                .svg-line-elem {
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-width: 2px;
+                }
             }
         }
         // dropdown menu
