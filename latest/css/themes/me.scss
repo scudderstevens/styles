@@ -8,17 +8,7 @@
 
 // fonts
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@523&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/*
-@font-face {
-    font-family: 'Raleway', sans-serif;
-    src: url("../../assets/fonts/Raleway/Raleway-VariableFont_wght.ttf") format("fft"),
-         url("../../assets/fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf") format("fft");
-}
-@font-face {
-    font-family: 'Dosis', sans-serif;
-    src: url("../../assets/fonts/Dosis/Dosis-VariableFont_wght.ttf") format("fft");
-}
-*/
+
 // color vars
 $alt:  #dfc53c;
 $primary: adjust-hue( $alt, 180 );
@@ -26,7 +16,6 @@ $secondary: adjust-hue( $primary, 260 );
 $accent: adjust-hue( $secondary, 180 );
  
 .me {
-
     // body background
     background-color: $white;
 
@@ -39,61 +28,127 @@ $accent: adjust-hue( $secondary, 180 );
         font-family: 'Dosis', sans-serif;
         font-optical-sizing: auto;
     }
-    p, a {
+    p, a, li {
         font-family: 'Raleway', sans-serif;
-        font-size: 1rem;
+        font-size: 1.25rem;
         font-weight: 300;
     }
 
     // font variations
     h1 {
-        font-size: 2rem;
+        font-size: 2.25rem;
         font-weight: 500;
-        font-variation-settings: 'wdth' 90;
-        color: darken( $secondary, 50% );
+        font-variation-settings: 'wght' 500, 'wdth' 90;
+        color: darken( $accent, 50% );
     }
     h2 {
-        font-size: 1.75rem;
+        font-size: 2rem;
         font-weight: 450;
-        font-variation-settings: 'wdth' 90;
-        color: darken( $secondary, 45% );
+        font-variation-settings: 'wght' 450, 'wdth' 90;
+        color: darken( $accent, 45% );
     }
     h3 {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
         font-weight: 400;
-        font-variation-settings: 'wdth' 90;
-        color: darken( $secondary, 40% );
+        font-variation-settings: 'wght' 400, 'wdth' 90;
+        color: darken( $accent, 40% );
     }
     h4 {
         font-size: 1.25rem;
         font-weight: 350;
-        font-variation-settings: 'wdth' 90;
-        color: darken( $secondary, 35% );
+        font-variation-settings: 'wght' 350, 'wdth' 90;
+        color: darken( $accent, 35% );
     }
     h5 {
-        font-size: 1rem;
+        font-size: 1.25rem;
         font-weight: 300;
-        font-variation-settings: 'wdth' 100;
-        color: darken( $secondary, 30% );
+        font-variation-settings: 'wght' 300,'wdth' 100;
+        color: darken( $accent, 30% );
     } 
     h6 {
-        font-size: .75rem;
+        font-size: 1rem;
         font-weight: 250;
-        font-variation-settings: 'wdth' 110;
-        color: darken( $secondary, 25% );
+        font-variation-settings: 'wght' 250, 'wdth' 110;
+        color: darken( $accent, 25% );
+    }
+    p strong {
+        font-weight: 450;
+    }
+    p.quote {
+        font-style: italic;
+        font-variation-settings: 'ital' 1;
+        text-shadow: 1px 2px 1px #fff;
+        color: darken( $alt, 40% );
+        background: linear-gradient(180deg, rgba(255,255,255,0) 65%, $alt 65%);
+        display: inline;
+        svg {
+            margin-left: -24px;
+            padding-right: 4px;
+            padding-bottom: 12px;
+        }
+        svg .dbl-quote {
+            fill: $alt;
+        }
+    }
+    p.quote-src {
+        background:linear-gradient(180deg, lighten( $alt, 30% ) 50%, rgba(255,255,255,0) 50% ); 
+        margin: 0;
+        padding: 1rem 0;
+        a:hover {
+            background: $white;
+        }
+    }
+
+    // M (larger)
+    p.mega,
+    p.mega a,
+    a.mega {
+        font-weight: 350;
+        font-size: 1.5rem;
+    }
+    p.giga,
+    p.giga a,
+    a.giga {
+        font-weight: 400;
+        font-size: 1.75rem;
+    }
+    p.tera, 
+    p.tera a,
+    a.tera {
+        font-weight: 450;
+        font-size: 2rem;
+    }
+
+    // µ (smaller)
+    p.micro,
+    p.micro a
+    a.micro {
+        font-weight: 250;
+        font-size: 1.1rem;
+    } 
+    p.nano,
+    p.nano a,
+    a.nano {
+        font-weight: 200;
+        font-size: .85rem;
+    }
+    p.pico,
+    p.pico a,
+    a.pico {
+        font-weight: 150;
+        font-size: .60rem;
     }
 
     // links
-    a,
-    a.icon-link {
+    p a {
         color: darken( $primary, 5% );
         text-decoration: none;
-        font-weight: 400;
         &:visited {
             color: darken( $primary, 15% );
+
         }
         &:hover {
-            color: darken( $primary, 10% );
+            color: darken( $secondary, 15% );
             text-decoration: underline;
         }
         &:active {
@@ -101,39 +156,68 @@ $accent: adjust-hue( $secondary, 180 );
             text-decoration: underline;
         }
     }
-    a.icon-link svg {
-        margin-bottom: -.25rem;
-    }
-
-    // M (larger)
-    p.mega, a.mega {
-        font-weight: 350;
-        font-size: 1.25rem;
-    }
-    p.giga, a.giga {
+    a.icon-link {
+        color: darken( $primary, 5% );
+        text-decoration: none;
         font-weight: 400;
-        font-size: 1.5rem;
+        svg {
+            width: 1.15rem;
+            height: 1.15rem;
+            margin-left: .25rem;
+            margin-right: .25rem;
+            margin-bottom: -.15rem;
+            color: lighten( $primary, 25% );
+        }
+        &:visited {
+            color: darken( $primary, 15% );
+            svg {
+                color: darken( $primary, 15% );
+            }
+        }
+        &:hover {
+            color: darken( $secondary, 15% );
+            text-decoration: underline;
+            svg {
+                color: darken( $secondary, 15% );
+            }
+        }
+        &:active {
+            color: $alt;
+            text-decoration: underline;
+            svg {
+                color: $alt;
+            }
+        }
     }
-    p.tera, a.tera {
-        font-weight: 450;
-        font-size: 1.75rem;
-    }
-
-    // µ (smaller)
-    p.micro, a.micro {
-        font-weight: 250;
-        font-size: .85rem;
-    } 
-    p.nano, a.nano {
-        font-weight: 200;
-        font-size: .65rem;
-    }
-    p.pico, a.pico {
-        font-weight: 150;
-        font-size: .15rem;
-    }
-    p strong {
-        font-weight: 450;
+    a.icon-link.external {
+        text-decoration: none;
+        svg {
+            width: 1rem;
+            height: 1rem;
+            margin-left: .25rem;
+            margin-bottom: 0;
+            color: lighten( $primary, 25% );
+        }
+        &:visited {
+            color: darken( $primary, 15% );
+            svg {
+                color: darken( $primary, 15% );
+            }
+        }
+        &:hover {
+            color: darken( $secondary, 15% );
+            text-decoration: underline;
+            svg {
+                color: darken( $secondary, 15% );
+            }
+        }
+        &:active {
+            color: $alt;
+            text-decoration: underline;
+            svg {
+                color: $alt;
+            }
+        }
     }
 
     // colors
@@ -153,6 +237,7 @@ $accent: adjust-hue( $secondary, 180 );
         &_s075 { background-color: lighten( $primary, 20% ); }
         &_s07,
         &_s070 { background-color: lighten( $primary, 15% ); }
+        &_s070a70 { background-color: rgba(126, 143, 234, .70); }
         &_s065 { background-color: lighten( $primary, 10% ); }
         &_s06,
         &_s060 { background-color: lighten( $primary, 5% ); }
@@ -302,12 +387,20 @@ $accent: adjust-hue( $secondary, 180 );
     #logo {
         width: 65px;
         height: 65px;
-        margin: 5px;
+        margin: auto 1.5rem auto -5px;
     }
 
     // isometric backgrounds
     .iso-background__repeating-grid {
         background-image: url("https://ssme.s3.filebase.com/theme/assets/iso__grid-repeating-background.png");
+        background-repeat: repeat;
+    }
+    .iso-background__repeating-grid.primary {
+        background-image: url("https://ssme.s3.filebase.com/theme/assets/iso__grid-repeating-background_primary.png");
+        background-repeat: repeat;
+    }
+    .iso-background__repeating-grid.mono {
+        background-image: url("https://ssme.s3.filebase.com/theme/assets/iso__grid-repeating-background_mono.png");
         background-repeat: repeat;
     }
     .iso-background__photo {
@@ -322,98 +415,209 @@ $accent: adjust-hue( $secondary, 180 );
         background-position: center;
         background-size: cover;
     }
-
     .iso-background__repeating-grid.fixed,
     .iso-background__photo.fixed,
     .iso-background__mitsubishis.fixed {
         background-attachment: fixed;
     }
 
-    // buttons
-    a.btn {
+    // buttons   
+    /*  .btn-grp,
+        .btn-wrapper {
+        &:first-child {
+            .btn {
+                margin: .5rem .35rem .5rem 0;
+            }
+        }
+        &:last-child {
+            .btn {
+                margin: .5rem 0 .5rem .35rem;
+            }
+        }
+    } */
+    a[class^="btn-"] {
         display: flex;
         align-items: center;
         justify-content: center;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        border-radius: 5px;
         font-size: 1rem;
         font-weight: 450;
         cursor: pointer;
-    }
-
-    a.btn {
-        color: darken( $primary, 30% );
-        background-color: lighten( $primary, 47% );
-        border: solid lighten( $primary, 30% ) 1px;
-        text-decoration: none;
-        &:visited {
-            color: darken( $primary, 30% );
-            border: solid darken( $primary, 30% ) 1px;
+        svg {
+            width: 1.75rem;
+            height: 1.75rem;
         }
-        &:hover {
-            color: darken( $primary, 10% );
-            border: solid lighten( $primary, 25% ) 1px;
-            text-decoration: underline;
-        }
-        &:active {
-            color: darken( $alt, 10% );
-            border: solid darken( $alt, 25% ) 1px;
-            text-decoration: underline;
+        // primary
+        &.primary {
+            color: darken( $primary, 5% );
+            background-color: lighten( $primary, 47% );
+            text-decoration: none;
+            &:visited {
+                color: darken( $primary, 30% );
+            }
+            &:hover {
+                color: darken( $secondary, 15% );
+                text-decoration: underline;
+            }
+            &:active {
+                color: darken( $alt, 10% );
+                text-decoration: underline;
+            }
         }
     }
 
     a.btn-nav_back,
-    a.btn-sidebar_toggle-menu,
-    a.btn-alert_confirm {
+    a.btn-sidebar_toggle-menu {
         color: darken( $primary, 30% );
-        background-color: lighten( $primary, 47% );
-        border: solid lighten( $primary, 30% ) 1px;
+        background-color: lighten( $primary, 15% );
+        svg {
+            width: 1.75rem;
+            height: 1.75rem;
+        }
         &:visited {
             color: darken( $primary, 10% );
             background-color: $white;
-            border: solid darken( $primary, 30% ) 1px;
         }
         &:hover {
+            cursor: pointer;
             color: $white;
             background-color: darken( $primary, 10% );
-            border: solid darken( $primary, 30% ) 1px;
         }
         &:active {
-            color: $white; 
+            color: darken( $alt, 45% );
             background-color: darken( $alt, 10% );
-            border: solid darken( $alt, 25% ) 1px;
         }
     }
 
     a.btn-alert_confirm {
         background-color: lighten( $alt, 47% );
         border: solid lighten( $alt, 30% ) 1px;
+        &:visited {
+            color: darken( $alt, 10% );
+            background-color: $white;
+            border: solid darken( $alt, 30% ) 1px;
+        }
+        &:hover {
+            color: $white;
+            text-decoration: none;
+            background-color: darken( $alt, 20% );
+            border: solid darken( $alt, 30% ) 1px;
+        }
+        &:active {
+            color: $white;
+            text-decoration: none;
+            background-color: darken( $secondary, 10% );
+            border: solid darken( $secondary, 25% ) 1px;
+        }
+        svg {
+            margin-top: -.25rem;
+        }
     }
-
-    a.icon-link svg,
-    a.btn svg {
-        width: 1.25rem;
-        height: 1.25rem;
-    }
-
     a.btn-nav_back,
     a.btn-sidebar_toggle-menu {
         padding: .75rem;
     }
-
-    a.btn-nav_main,
-    a.btn-alert_confirm {
-        margin: .5rem .75rem;
-        padding: .75rem .5rem;
-    }
-
     .grid__fixed-width a.btn-nav_back,
     .grid__fixed-width a.btn-sidebar_toggle-menu {
         margin: .5rem 0;
     }
 
-    a.btn-nav_main svg,
+    a.btn-nav_main {
+        font-weight: 350;
+        font-size: 2rem;
+        padding: 1.25rem 1rem;
+        text-decoration: none;
+        svg {
+            width: 3rem;
+            height: 3rem;
+            margin: 0 1rem 0 0;
+        }
+        &.primary {
+            color: lighten( $primary, 25% );
+            background-color: darken( $primary, 41% );
+            svg {
+                color: darken( $primary, 45% );
+                .logo {
+                    fill: lighten( $primary, 25% );
+                    stroke: lighten( $primary, 25% );
+                }
+            }
+        }
+        &.accent {
+            color: darken( $accent, 5% );
+            background-color: darken( $accent, 41% );
+            svg {
+                color: darken( $accent, 45% );
+                .logo {
+                    fill: darken( $accent, 15% );
+                    stroke: darken( $accent, 15% );
+                }
+            }
+        }
+        &:visited {
+            &.primary {
+                color: lighten( $primary, 10% );
+                svg {
+                    color: darken( $primary, 43% );
+                    .logo {
+                        fill: lighten( $primary, 10% );
+                        stroke: lighten( $primary, 10% );
+                    }
+                }
+            }
+            &.accent {
+                color: lighten( $accent, 10% );
+                svg {
+                    color: darken( $accent, 43% );
+                    .logo {
+                        fill: lighten( $accent, 10% );
+                        stroke: lighten( $accent, 10% );
+                    }
+                }
+            }
+        }
+        &:hover {
+            text-decoration: underline;
+            &.primary {
+                color: darken( $primary, 45% );
+                background-color: $primary;
+                svg {
+                    color: darken( $primary, 45% );
+                    .logo {
+                        fill: lighten( $primary, 5% );
+                        stroke: lighten( $primary, 5% );
+                    }
+                }
+            }
+            &.accent {
+                color: darken( $accent, 45% );
+                background-color: $accent;
+                svg {
+                    color: darken( $accent, 45% );
+                    .logo {
+                        fill: darken( $accent, 10% );
+                        stroke: darken( $accent, 10% );
+                    }
+                }
+            }
+        }
+        &:active {
+            text-decoration: underline;
+            background-color: $alt;
+            &.primary,
+            &.accent {
+                color: darken( $alt, 45% );
+                background-color: $alt;
+                svg {
+                    color: darken( $alt, 10% );
+                    .logo {
+                        fill: darken( $alt, 45% );
+                        stroke: darken( $alt, 45% );
+                    }
+                }
+            }
+        }
+    }
+
     a.btn-alert_confirm svg {
         margin-right: .75rem;
     }
@@ -425,14 +629,12 @@ $accent: adjust-hue( $secondary, 180 );
         flex-direction: row;
         align-items: center;
         text-align: center;
-        padding: .5rem;
+        // padding: .5rem;
     }
-
     .grid__fixed-width .ribbon_nav,
     .grid__fixed-width .ribbon_alert {
         padding: .5rem 0;
     }
-
     .ribbon_alert p {
         font-size: 1rem;
         font-weight: 400;
@@ -442,8 +644,364 @@ $accent: adjust-hue( $secondary, 180 );
         font-weight: 600;
     }
 
-    // footer
-    footer p {
-        color: $white;
+    // projects
+    .project {
+        // icons
+        &-header,
+        &-features,
+        &-built-with,
+        &-conclusion {
+            svg.current {
+                margin: auto 1.25rem auto 0;
+                .svg-elem {
+                    fill: none;
+                    stroke: darken( $accent, 35% );
+                    /* path: darken( $accent, 35% ); */
+                }
+                .svg-fill-elem {
+                    fill: $white;
+                }
+            }
+        }
+        // dropdown menu
+        &-header .dropdown {
+            width: 20px;
+            height: 20px;
+            margin: auto auto auto 10px;
+            padding: 3px 20px;
+            position: relative;
+            display: inline-block;
+            svg.dropbtn {
+                border: none;
+                cursor: pointer;
+                circle {
+                    fill: none;
+                    stroke: darken( $primary, 5% );
+                    stroke-linecap:round;
+                    stroke-linejoin:round;
+                    stroke-width:2px;
+                }
+            }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+            }
+            .dropdown-content_top,
+            .dropdown-content_bottom {
+                height: 6px;
+                background-color: lighten( $primary, 10% );
+            }
+            .dropdown-content_top {
+                -webkit-border-top-right-radius: 3px;
+                -moz-border-top-right-radius: 3px;
+                border-top-right-radius: 3px;
+            }
+            .dropdown-content_bottom {
+                -webkit-border-bottom-left-radius: 3px;
+                -moz-border-bottom-left-radius: 3px;
+                border-bottom-left-radius: 3px;
+                -webkit-border-bottom-right-radius: 3px;
+                -moz-border-bottom-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+            }
+            &:hover {
+                background-color: darken( $primary, 5% );
+                -webkit-border-top-left-radius: 6px;
+                -moz-border-top-left-radius: 6px;
+                border-top-left-radius: 6px;
+                -webkit-border-top-right-radius: 6px;
+                -moz-border-top-right-radius: 6px;
+                border-top-right-radius: 6px;
+                svg.dropbtn {
+                    padding-right: 120px;
+                    circle {
+                        stroke: $white;
+                    }
+                }
+                .dropdown-content {
+                    display: block;
+                    background-color: $white;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    margin-left: -20px;
+                    z-index: 1;
+                    -webkit-border-radius: 3px;
+                    -moz-border-radius: 3px;
+                    border-radius: 3px;
+                    -webkit-border-top-left-radius: 0;
+                    -moz-border-top-left-radius: 0;
+                    border-top-left-radius: 0;
+                    a {
+                        margin: 0;
+                        color: darken( $primary, 5% );
+                        text-decoration: none;
+                        display: flex;
+                        svg {
+                            margin: 0;
+                            padding: 10px 20px;
+                            background-color: lighten( $mono, 45% );
+                        }
+                        span {
+                            padding: 8px 20px 8px 10px;
+                        }
+                        &:hover {
+                            color:darken( $secondary, 15% );
+                            background-color: lighten( $mono, 45% );
+                            -webkit-border-radius: 3px;
+                            -moz-border-radius: 3px;
+                            border-radius: 3px;
+                            svg {
+                                background-color: lighten( $mono, 40% );
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &-description {
+            h4 {
+                margin: .5rem 0 .5rem;
+            }
+            p {
+                margin: .5rem 2rem .5rem 0;
+            }
+            margin-bottom: 1.75rem;
+        }
+        &-features {
+            h5 {
+                margin: .5rem 0 .5rem;
+            }
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                li {
+                    margin: 0;
+                    padding: .5rem 0;
+                }
+            }
+        }
+        &-tech-deck {
+            margin-bottom: 1.75rem;
+        }
+        &-conclusion {
+            h4 {
+                margin: 1.25rem 0;
+            }
+            p {
+                margin: .5rem 2rem 1.25rem 0;
+            }
+            padding: 2rem 0;
+        }
     }
- }
+
+    // footer
+    footer {
+        .top { padding: 1.5rem 0; }
+        .middle {
+            background-color: darken( $accent, 41% );
+        }
+        .profile-wrapper {
+            width: 20%;
+        }
+        img.profile {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        .quote-wrapper {
+            display: block;
+            width: 80%;
+        }
+        p { color: $white; }
+        /* p.quote {
+            color: $white;
+            text-shadow: 1px 2px 1px darken( $accent, 45% );
+            background: linear-gradient(180deg, rgba(255,255,255,0) 65%, darken( $accent, 20% ) 65%);
+            svg .dbl-quote {
+                fill: darken( $accent, 20% );
+            }
+        } */
+        /* p.quote-src {
+            background:linear-gradient(180deg, darken( $accent, 35% ) 50%, rgba(255,255,255,0) 50% ); 
+            margin: 0;
+            padding: 1rem 0;
+        }*/
+
+        p.quote {
+            font-style: italic;
+            font-variation-settings: 'ital' 1;
+            text-shadow: 1px 2px 1px darken( $accent, 45% );
+            color: $white;
+            background: linear-gradient(180deg, rgba(255,255,255,0) 65%, darken( $accent, 20% ) 65%);
+            display: inline;
+            svg {
+                margin-left: -24px;
+                padding-right: 4px;
+                padding-bottom: 12px;
+            }
+            svg .dbl-quote {
+                fill: darken( $accent, 20% );
+            }
+        }
+        p.quote-src {
+            background:linear-gradient(180deg, darken( $accent, 35% ) 50%, rgba(255,255,255,0) 50% ); 
+            margin: 0;
+            padding: 1rem 0;
+            a:hover {
+                background: $white;
+            }
+        }
+
+        img.logo {
+            width: 32px;
+            height: 32px;
+            margin: 5px 0;
+        }
+        a.btn-nav_networks {
+            //margin: .5rem .25rem;
+            padding: .75rem .5rem;
+            color: darken( $accent, 15% );
+            background-color: darken( $accent, 41% );
+            // border: solid darken( $accent, 31% ) 1px;
+            // -webkit-border-radius: 1.75rem;
+            // -moz-border-radius: 1.75rem;
+            // border-radius: 1.75rem;
+            svg {
+                width: 1.75rem;
+                height: 1.75rem;
+                margin-right: .35rem;
+                color: darken( $accent, 45% );
+                .logo {
+                    fill: darken( $accent, 15% );
+                    stroke: darken( $accent, 15% );
+                }
+            }
+            &:visited {
+                color: darken( $accent, 25% );
+                // border: solid darken( $accent, 35% ) 1px;
+                svg {
+                    color: darken( $accent, 43% );
+                    .logo {
+                        fill: darken( $accent, 25% );
+                        stroke: darken( $accent, 25% );
+                    }
+                }
+            }
+            &:hover {
+                color: darken( $accent, 10% );
+                background-color: darken( $accent, 33% );
+                // border: solid darken( $accent, 28% ) 1px;
+                text-decoration: underline;
+                svg {
+                    color: darken( $accent, 45% );
+                    .logo {
+                        fill: darken( $accent, 10% );
+                        stroke: darken( $accent, 10% );
+                    }
+                }
+            }
+            &:active {
+                color: $white;
+                // border: solid $white 1px;
+                text-decoration: underline;
+                svg {
+                    color: darken( $accent, 50% );
+                    .logo {
+                        fill: $white;
+                        stroke: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    @include md {
+        footer .profile-wrapper {
+            width: 33.333%;
+        }
+        footer .quote-wrapper {
+            width: 66.666%;
+        }
+        .btn-grp,
+        footer .grid__fixed-width.btn-grp {
+            flex-direction: column;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .grid-1-3.btn {
+            width: 100%;
+        }
+        a.btn-nav_main,
+        footer a.btn-nav_networks {
+            padding: .75rem 2.5rem;
+            justify-content: flex-start;
+        }
+    }
+    @include sm {
+        footer .profile-wrapper {
+            width: calc(100% - 5rem);
+            padding: 2.5rem 2.5rem 0;
+        }
+        footer img.profile {
+            margin: 0 auto;
+        }
+        footer .quote-wrapper {
+            width: calc(100% - 5rem);
+            padding: .75rem 2.5rem;
+        }
+        footer .grid__fixed-width.top {
+            flex-direction: column;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .btn-grp,
+        footer .grid__fixed-width.btn-grp {
+            flex-direction: column;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .grid-1-3.btn {
+            width: 100%;
+        }
+        a.btn-nav_main,
+        footer a.btn-nav_networks {
+            padding: .75rem 2.5rem;
+            justify-content: flex-start;
+        }
+    }
+    @include xs {
+        .btn-grp,
+        footer .grid__fixed-width.btn-grp {
+            flex-direction: column;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .grid-1-3.btn {
+            width: 100%;
+        }
+        a.btn-nav_main,
+        footer a.btn-nav_networks {
+            justify-content: flex-start;
+        }
+    }
+}
+    /*footer .btn-grp .btn {
+        a[class^="btn-"] {
+            margin: .5rem .35rem;
+        }
+        &:first-of-type {
+            a[class^="btn-"] {
+                margin: .5rem .35rem .5rem 0;
+            }
+        }
+        &:last-of-type {
+            a[class^="btn-"] {
+                margin: .5rem 0 .5rem .35rem;
+            }
+        }
+    }*/

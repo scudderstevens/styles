@@ -4,6 +4,7 @@ These Styles are build using [SASS](https://sass-lang.com/) and follow the best 
 
 * [normalize.css v8.0.1](https://github.com/necolas/normalize.css) – css/vendors
 * [variable fonts](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide "mozilla documentation")
+* [web.dev | intro to variable fonts, guide](https://web.dev/variable-fonts/ "google developers guide")
 
 ### Frameworks and Reference
 * [html.systems | reference : design component examples](http://html.systems/ "design component examples and code")
@@ -18,6 +19,9 @@ These Styles are build using [SASS](https://sass-lang.com/) and follow the best 
 
 ### Buttons
 * [medium.com | post : button best practices](https://medium.com/nextux/design-better-buttons-6b64eb7f13bc)
+
+### Model-Based User Interfaces
+* [w3.org : resource ](https://www.w3.org/TR/mbui-intro/)
 
 ### BEM
 * [getbem.com : resource](http://getbem.com/)

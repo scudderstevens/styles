@@ -13,7 +13,7 @@ A design philosophy that focuses on establishing a logical structure (Design Sys
 ### Applied
 
 **B.** E. M. - Universal building **b**locks of the design system, creating a _Design Framework_
-[main.min.css](https://min.gitcdn.link/repo/scudderstevens/styles/main/latest/css/main.min.css "universal building blocks")
+[main.min.css](https://latest.cdn-sty.link/css/main.min.css "universal building blocks")
 
 ~~~
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -22,7 +22,7 @@ A design philosophy that focuses on establishing a logical structure (Design Sys
 ~~~
 
 B. **E. M.** - Platform and or property specific **e**lements and **m**odifcations of `main`, creating `me` _theme_.
-[me.min.css](https://min.gitcdn.link/repo/scudderstevens/styles/main/latest/css/themes/me.min.css "scudderstevens.me")
+[me.min.css](https://latest.cdn-sty.link/css/themes/me.min.css "scudderstevens.me")
 
 ~~~
 <link rel="stylesheet" type="text/css" href="latest/css/themes/me.min.css">

@@ -34,8 +34,13 @@ version/
 Currently you are reading a README file for this (_latest_) version of styles, see the [global README](../index.md) file for additional details. [MIT License](../LICENSE)
 
 ## CDN Styles
-This framework and all theme files can be pulled from a CDN for production level solutions using 
-[raw.githack.com](https://raw.githack.com/ "serves raw files directly from GitHub, Bitbucket or GitLab with proper Content-Type headers")
+This framework and all theme files can be pulled from a CDN using:
+
+for Production [netlify](https://latest.cdn-sty.link/index.md "GitHub Deployed to CDN")
+
+-or-
+
+for Development [raw.githack.com](https://raw.githack.com/ "serves raw files directly from GitHub, Bitbucket or GitLab with proper Content-Type headers")
 
 ~~[gitcdn.link](https://min.gitcdn.link/ "CDN for GitRepos")~~, not reliable
 
@@ -47,13 +52,13 @@ add relative links to local development styles within the HTML `<head>` tag
 
 `<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">`
 
-- **Framework**, local _main_ [main.css](https://raw.githack.com/scudderstevens/styles/main/latest/css/main.css "universal building blocks")
+- **Framework**, local _main_ [main.css](https://latest.cdn-sty.link/css/main.css "universal building blocks")
 `<link rel="stylesheet" type="text/css" href="./latest/css/main.css">`
 
-- **Theme**, local _me_ [themes/me.css](https://min.gitcdn.link/repo/scudderstevens/styles/main/latest/css/themes/me.css "scudderstevens.me")
+- **Theme**, local _me_ [themes/me.css](https://latest.cdn-sty.link/css/themes/me.css "scudderstevens.me")
 `<link rel="stylesheet" type="text/css" href="./latest/css/themes/me.css">`
 
-- **Page**, local _resume_ [pages/me.css](https://min.gitcdn.link/repo/scudderstevens/styles/main/latest/css/pages/me.css "scudderstevens.me/resume")
+- **Page**, local _resume_ [pages/me.css](https://latest.cdn-sty.link/css/pages/me.css "scudderstevens.me/resume")
 `<link rel="stylesheet" type="text/css" href="./latest/css/pages/me.css">`
 
 `<link rel="stylesheet" type="text/css" href="< relative path >/< file name >.css">`
@@ -63,16 +68,16 @@ add production ready styles to the HTML `<head>` tag
 
 `<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">`
 
-- **Framework**, _main_ [main.min.css](https://rawcdn.githack.com/scudderstevens/styles/34485f1e104c88ed7428d65f52a980e1e301dcb7/latest/css/main.min.css "universal building blocks")
+- **Framework**, _main_ [main.min.css](https://latest.cdn-sty.link/css/main.min.css "universal building blocks")
 
 `<link rel="stylesheet" type="text/css" href="https://raw.githack.com/scudderstevens/styles/main/latest/css/main.min.css">`
 
-- **Theme**, _me_ [themes/me.min.css](https://min.gitcdn.link/repo/scudderstevens/styles/main/latest/css/themes/me.min.css "scudderstevens.me")
+- **Theme**, _me_ [themes/me.min.css](https://latest.cdn-sty.link/css/themes/me.min.css "scudderstevens.me")
 & assest files [me/assets](https://filebase.com/buckets/ssme/theme/assets/ "scudderstevens.me theme asset files")
 
 `<link rel="stylesheet" type="text/css" href="https://raw.githack.com/scudderstevens/styles/main/latest/css/themes/me.min.css">`
 
-- **Page**, _resume_ [pages/me.min.css](https://min.gitcdn.link/repo/scudderstevens/styles/main/latest/css/pages/me.min.css "scudderstevens.me/resume")
+- **Page**, _resume_ [pages/me.min.css](https://latest.cdn-sty.link/css/pages/me.min.css "scudderstevens.me/resume")
 
 `<link rel="stylesheet" type="text/css" href="https://raw.githack.com/scudderstevens/styles/main/latest/css/pages/me.min.css">`
 
@@ -82,13 +87,13 @@ add within content or template files
 
 ### JavaScript
 Add specific javascript functions to properties, specific pages or design components.
-[smooth-scroll](https://raw.githack.com/scudderstevens/styles/main/latest/js/smooth-scroll.js)
+[smooth-scroll](https://latest.cdn-sty.link/js/smooth-scroll.js)
 
 within the HTML `<body>` after the `<footer>` container.
 
 `<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>`
 
-`<script src="https://raw.githack.com/scudderstevens/styles/main/latest/js/smooth-scroll.js"></script>`
+`<script src="https://latest.cdn-sty.link/js/smooth-scroll.js"></script>`
 
 ## Activate Styles and JavaScript
 For both local development or production, within the opening `<body>` tag:
