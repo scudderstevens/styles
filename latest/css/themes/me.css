@@ -701,6 +701,152 @@ a.micro {
   background-attachment: fixed;
 }
 
+.me .intro-duo {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+.me .intro-duo__profile {
+  display: flex;
+  flex-direction: column;
+}
+
+.me .intro-duo__profile .profile-img {
+  background-image: url("https://ik.imagekit.io/mp2mjn7fgdt/ssme/tr:w-750/content/Scudder-Trixie_profile-1000w668h.jpg");
+  background-repeat: no-repeat;
+  background-position-x: 70%;
+  background-position-y: center;
+  background-size: cover;
+  height: 500px;
+  width: 500px;
+}
+
+.me .intro-duo__profile .intro-duo__title {
+  display: block;
+  margin: 0 2em auto;
+}
+
+.me .intro-duo__copy {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 500px);
+  margin: auto 2em;
+  align-content: center;
+}
+
+.me .intro-duo__copy .intro-duo__title {
+  display: none;
+}
+
+@media (min-width: 961px) and (max-width: 1180px) {
+  .me .intro-duo__profile {
+    margin-bottom: 0;
+  }
+  .me .intro-duo__profile .profile-img {
+    background-image: url("https://ik.imagekit.io/mp2mjn7fgdt/ssme/tr:w-550/content/Scudder-Trixie_profile-550w367h.jpg");
+    height: 250px;
+    width: 250px;
+  }
+  .me .intro-duo__profile .intro-duo__title {
+    display: none;
+  }
+  .me .intro-duo__copy {
+    display: flex;
+    flex-direction: column;
+    width: calc( 100% - 4em);
+    margin: 0;
+    padding: 2em;
+  }
+  .me .intro-duo__copy .intro-duo__title {
+    display: block;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 960px) {
+  .me .intro-duo {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .me .intro-duo__profile {
+    height: 500px;
+  }
+  .me .intro-duo__profile .profile-img {
+    background-image: url("https://ik.imagekit.io/mp2mjn7fgdt/ssme/tr:w-550/content/Scudder-Trixie_profile-550w367h.jpg");
+    background-position-x: center;
+    height: 500px;
+    width: 100%;
+  }
+  .me .intro-duo__profile .intro-duo__title {
+    display: none;
+  }
+  .me .intro-duo__copy {
+    margin: 0;
+    width: calc( 100% - 4em);
+    padding: 2em;
+    align-content: top;
+  }
+  .me .intro-duo__copy .intro-duo__title {
+    display: block;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 575px) {
+  .me .intro-duo {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .me .intro-duo__profile {
+    height: 300px;
+  }
+  .me .intro-duo__profile .profile-img {
+    background-image: url("https://ik.imagekit.io/mp2mjn7fgdt/ssme/tr:w-250/content/Scudder-Trixie_profile-250w167h.jpg");
+    background-position-x: center;
+    height: 300px;
+    width: 100%;
+  }
+  .me .intro-duo__profile .intro-duo__title {
+    display: none;
+  }
+  .me .intro-duo__copy {
+    margin: 0;
+    width: calc( 100% - 4em);
+    padding: 2em;
+  }
+  .me .intro-duo__copy .intro-duo__title {
+    display: block;
+  }
+}
+
+@media (max-width: 375px) {
+  .me .intro-duo {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .me .intro-duo__profile {
+    height: 250px;
+  }
+  .me .intro-duo__profile .profile-img {
+    background-image: url("https://ik.imagekit.io/mp2mjn7fgdt/ssme/tr:w-250/content/Scudder-Trixie_profile-250w167h.jpg");
+    background-position-x: center;
+    height: 250px;
+    width: 100%;
+  }
+  .me .intro-duo__profile .intro-duo__title {
+    display: none;
+  }
+  .me .intro-duo__copy {
+    display: block;
+    width: 100%;
+  }
+  .me .intro-duo__copy .intro-duo__title {
+    display: block;
+  }
+}
+
 .me a[class^="btn-"] {
   display: flex;
   align-items: center;
