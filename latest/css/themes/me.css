@@ -1097,7 +1097,7 @@ a.micro {
 }
 
 .me .career-timeline {
-  padding-bottom: 1.75rem;
+  padding: 1.75rem 0;
 }
 
 .me .project-header svg.current, .me .project-tags svg.current, .me .project-tech-stack svg.current, .me .project-conclusion svg.current {
