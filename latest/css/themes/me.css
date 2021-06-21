@@ -1096,28 +1096,31 @@ a.micro {
   font-weight: 600;
 }
 
-.me .project-header svg.current, .me .project-features svg.current, .me .project-built-with svg.current, .me .project-conclusion svg.current {
+.me .project-header svg.current, .me .project-tags svg.current, .me .project-tech-stack svg.current, .me .project-conclusion svg.current {
   margin: auto 1.25rem auto 0;
 }
 
-.me .project-header svg.current .svg-elem, .me .project-features svg.current .svg-elem, .me .project-built-with svg.current .svg-elem, .me .project-conclusion svg.current .svg-elem {
+.me .project-header svg.current .svg-elem, .me .project-tags svg.current .svg-elem, .me .project-tech-stack svg.current .svg-elem, .me .project-conclusion svg.current .svg-elem {
   fill: none;
   stroke: #5a0f4d;
-  /* path: darken( $accent, 35% ); */
 }
 
-.me .project-header svg.current .svg-fill-elem, .me .project-features svg.current .svg-fill-elem, .me .project-built-with svg.current .svg-fill-elem, .me .project-conclusion svg.current .svg-fill-elem {
+.me .project-header svg.current .svg-fill-elem, .me .project-tags svg.current .svg-fill-elem, .me .project-tech-stack svg.current .svg-fill-elem, .me .project-conclusion svg.current .svg-fill-elem {
   fill: #ffffff;
 }
 
 .me .project-header svg.current .svg-fill-elem,
-.me .project-header svg.current .svg-line-elem, .me .project-features svg.current .svg-fill-elem,
-.me .project-features svg.current .svg-line-elem, .me .project-built-with svg.current .svg-fill-elem,
-.me .project-built-with svg.current .svg-line-elem, .me .project-conclusion svg.current .svg-fill-elem,
+.me .project-header svg.current .svg-line-elem, .me .project-tags svg.current .svg-fill-elem,
+.me .project-tags svg.current .svg-line-elem, .me .project-tech-stack svg.current .svg-fill-elem,
+.me .project-tech-stack svg.current .svg-line-elem, .me .project-conclusion svg.current .svg-fill-elem,
 .me .project-conclusion svg.current .svg-line-elem {
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 2px;
+}
+
+.me .project-header .project-owner {
+  margin: 0 auto 20px 0;
 }
 
 .me .project-header .dropdown {
@@ -1230,6 +1233,34 @@ a.micro {
   background-color: #e6e6e6;
 }
 
+.me .project-tags ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.me .project-tags ul li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: .25rem 2rem .25rem 0;
+}
+
+.me .project-tags ul li svg.current {
+  margin: .25rem .5rem .25rem 0;
+}
+
+.me .project-tags ul li .term {
+  font-weight: 250;
+  font-size: 1rem;
+  color: #5a0f4d;
+  text-decoration: none;
+  margin: auto 0;
+}
+
 .me .project-description {
   margin-bottom: 1.75rem;
 }
@@ -1242,22 +1273,7 @@ a.micro {
   margin: .5rem 2rem .5rem 0;
 }
 
-.me .project-features h5 {
-  margin: .5rem 0 .5rem;
-}
-
-.me .project-features ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.me .project-features ul li {
-  margin: 0;
-  padding: .5rem 0;
-}
-
-.me .project-tech-deck {
+.me .project-tech-stack {
   margin-bottom: 1.75rem;
 }
 

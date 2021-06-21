@@ -806,15 +806,14 @@ $accent: adjust-hue( $secondary, 180 );
     .project {
         // icons
         &-header,
-        &-features,
-        &-built-with,
+        &-tags,
+        &-tech-stack,
         &-conclusion {
             svg.current {
                 margin: auto 1.25rem auto 0;
                 .svg-elem {
                     fill: none;
                     stroke: darken( $accent, 35% );
-                    /* path: darken( $accent, 35% ); */
                 }
                 .svg-fill-elem {
                     fill: $white;
@@ -828,6 +827,11 @@ $accent: adjust-hue( $secondary, 180 );
             }
         }
         // dropdown menu
+        &-header {
+            .project-owner {
+                margin: 0 auto 20px 0;
+            }
+        }
         &-header .dropdown {
             width: 20px;
             height: 20px;
@@ -922,6 +926,32 @@ $accent: adjust-hue( $secondary, 180 );
                 }
             }
         }
+        &-tags {
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                li {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    padding: .25rem 2rem .25rem 0;
+                    svg.current{
+                        margin: .25rem .5rem .25rem 0;
+                    }
+                    .term {
+                        font-weight: 250;
+                        font-size: 1rem;
+                        color: darken( $accent, 35% );
+                        text-decoration: none;
+                        margin: auto 0;
+                    }
+                }
+            }
+        }
         &-description {
             h4 {
                 margin: .5rem 0 .5rem;
@@ -931,21 +961,7 @@ $accent: adjust-hue( $secondary, 180 );
             }
             margin-bottom: 1.75rem;
         }
-        &-features {
-            h5 {
-                margin: .5rem 0 .5rem;
-            }
-            ul {
-                margin: 0;
-                padding: 0;
-                list-style-type: none;
-                li {
-                    margin: 0;
-                    padding: .5rem 0;
-                }
-            }
-        }
-        &-tech-deck {
+        &-tech-stack {
             margin-bottom: 1.75rem;
         }
         &-conclusion {
