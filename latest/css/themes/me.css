@@ -724,14 +724,14 @@ a.micro {
 
 .me .intro-duo__profile .intro-duo__title {
   display: block;
-  margin: 0 2em auto;
+  margin: 0 2rem auto;
 }
 
 .me .intro-duo__copy {
   display: flex;
   flex-direction: column;
   width: calc(100% - 500px);
-  margin: auto 2em;
+  margin: auto 2rem;
   align-content: center;
 }
 
@@ -754,9 +754,9 @@ a.micro {
   .me .intro-duo__copy {
     display: flex;
     flex-direction: column;
-    width: calc( 100% - 4em);
+    width: calc( 100% - 4rem);
     margin: 0;
-    padding: 2em;
+    padding: 2rem;
   }
   .me .intro-duo__copy .intro-duo__title {
     display: block;
@@ -783,8 +783,8 @@ a.micro {
   }
   .me .intro-duo__copy {
     margin: 0;
-    width: calc( 100% - 4em);
-    padding: 2em;
+    width: calc( 100% - 4rem);
+    padding: 2rem;
     align-content: top;
   }
   .me .intro-duo__copy .intro-duo__title {
@@ -812,8 +812,8 @@ a.micro {
   }
   .me .intro-duo__copy {
     margin: 0;
-    width: calc( 100% - 4em);
-    padding: 2em;
+    width: calc( 100% - 4rem);
+    padding: 2rem;
   }
   .me .intro-duo__copy .intro-duo__title {
     display: block;
@@ -1094,6 +1094,10 @@ a.micro {
 
 .me .ribbon_alert p strong {
   font-weight: 600;
+}
+
+.me .career-timeline {
+  padding-bottom: 1.75rem;
 }
 
 .me .project-header svg.current, .me .project-tags svg.current, .me .project-tech-stack svg.current, .me .project-conclusion svg.current {

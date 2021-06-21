@@ -441,7 +441,7 @@ $accent: adjust-hue( $secondary, 180 );
         }
         .intro-duo__title {
             display: block;
-            margin: 0 2em auto;
+            margin: 0 2rem auto;
         }
 
     }
@@ -451,7 +451,7 @@ $accent: adjust-hue( $secondary, 180 );
         flex-direction: column;
         width: calc(100% - 500px);
 
-        margin: auto 2em;
+        margin: auto 2rem;
         align-content: center;
 
         .intro-duo__title {
@@ -477,9 +477,9 @@ $accent: adjust-hue( $secondary, 180 );
 
             display: flex;
             flex-direction: column;
-            width: calc( 100% - 4em );
+            width: calc( 100% - 4rem );
             margin: 0;
-            padding: 2em;
+            padding: 2rem;
 
             .intro-duo__title {
                 display: block;
@@ -509,8 +509,8 @@ $accent: adjust-hue( $secondary, 180 );
         }
         .intro-duo__copy {
             margin: 0;
-            width: calc( 100% - 4em );
-            padding: 2em;
+            width: calc( 100% - 4rem );
+            padding: 2rem;
             align-content: top;
 
             .intro-duo__title {
@@ -540,8 +540,8 @@ $accent: adjust-hue( $secondary, 180 );
         .intro-duo__copy {
 
             margin: 0;
-            width: calc( 100% - 4em );
-            padding: 2em;
+            width: calc( 100% - 4rem );
+            padding: 2rem;
 
             .intro-duo__title {
                 display: block;
@@ -800,6 +800,11 @@ $accent: adjust-hue( $secondary, 180 );
     }
     .ribbon_alert p strong {
         font-weight: 600;
+    }
+
+    // timeline
+    .career-timeline {
+        padding-bottom: 1.75rem;
     }
 
     // projects
