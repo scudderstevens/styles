@@ -6,7 +6,23 @@ These Styles are build using [SASS](https://sass-lang.com/) and follow the best 
 * [variable fonts](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide "mozilla documentation")
 * [web.dev | intro to variable fonts, guide](https://web.dev/variable-fonts/ "google developers guide")
 
-### Frameworks and Reference
+## Heuristics
+A _heuristic evaluation_ is a usability inspection method for computer software that helps to identify usability problems in the user interface (UI) design. [wiki](https://en.wikipedia.org/wiki/Heuristic_evaluation)
+
+* Nielsen's Heuristics [wiki]https://en.m.wikipedia.org/wiki/Heuristic_evaluation#Nielsen.27s_heuristics) | [post](https://blog.prototypr.io/10-usability-heuristics-with-examples-4a81ada920c)
+* Gerhardt-Powals' cognitive engineering principles [wiki](https://en.wikipedia.org/wiki/Heuristic_evaluation#Gerhardt-Powals.27_cognitive_engineering_principles) |
+* Shneiderman's Eight Golden Rules of Interface Design [wiki](https://en.wikipedia.org/wiki/Heuristic_evaluation#Shneiderman.27s_Eight_Golden_Rules_of_Interface_Design) |
+* Weinschenk and Barker classification [wiki](https://en.wikipedia.org/wiki/Heuristic_evaluation#Weinschenk_and_Barker_classification) |
+* Google Design System & Heuristics [docs](https://material.io/design)
+* Apple Design System & Heuristics [docs](https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/)
+
+### Frameworks
+
+#### bit
+
+An end-to-end solution for component-driven web development [www](https://bit.dev/)
+
+
 * [html.systems | reference : design component examples](http://html.systems/ "design component examples and code")
 * [get.foundation | getting started : documentation](https://get.foundation/sites/docs/index.html)
 * [getbootstrap.com | getting started : documentation](https://getbootstrap.com/docs/4.5/getting-started/introduction/)

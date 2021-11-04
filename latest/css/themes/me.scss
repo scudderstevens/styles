@@ -579,20 +579,6 @@ $accent: adjust-hue( $secondary, 180 );
         }
     }
 
-    // buttons   
-    /*  .btn-grp,
-        .btn-wrapper {
-        &:first-child {
-            .btn {
-                margin: .5rem .35rem .5rem 0;
-            }
-        }
-        &:last-child {
-            .btn {
-                margin: .5rem 0 .5rem .35rem;
-            }
-        }
-    } */
     a[class^="btn-"] {
         display: flex;
         align-items: center;
@@ -977,6 +963,116 @@ $accent: adjust-hue( $secondary, 180 );
                 margin: .5rem 2rem 1.25rem 0;
             }
             padding: 2rem 0;
+        }
+        &-conclusion_ctas {
+            height: .25rem;
+        }
+        &-cta_btn-grp {
+
+            a.cta-btn {
+                padding: .75rem .5rem;
+                color: darken( $accent, 15% );
+                background-color: lighten( $mono, 35% );
+                svg {
+                    width: 1.75rem;
+                    height: 1.75rem;
+                    margin-right: .35rem;
+                    color: lighten( $mono, 25% );
+                    .logo {
+                        fill: lighten( $mono, 15% );
+                        stroke: lighten( $mono, 15% );
+                    }
+                }
+                &:visited {
+                    color: darken( $accent, 25% );
+                    svg {
+                        color: darken( $accent, 43% );
+                        .logo {
+                            fill: darken( $accent, 25% );
+                            stroke: darken( $accent, 25% );
+                        }
+                    }
+                }
+                &:hover {
+                    color: darken( $accent, 10% );
+                    background-color: darken( $accent, 33% );
+                    text-decoration: underline;
+                    svg {
+                        color: darken( $accent, 45% );
+                        .logo {
+                            fill: darken( $accent, 10% );
+                            stroke: darken( $accent, 10% );
+                        }
+                    }
+                }
+                &:active {
+                    color: $white;
+                    text-decoration: underline;
+                    svg {
+                        color: darken( $accent, 50% );
+                        .logo {
+                            fill: $white;
+                            stroke: $white;
+                        }
+                    }
+                }
+            }
+        }
+        &-conclusion_end-cap {
+            height: 2.5rem;
+        }
+    }
+
+    @include md {
+        .project .btn-grp,
+        .project.grid__fixed-width.btn-grp {
+            flex-direction: column;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .grid-1-3.btn {
+            width: 100%;
+        }
+        .cta_btn-grp a.cta-btn,
+        .project a.cta-btn {
+            padding: .75rem 2.5rem;
+            justify-content: flex-start;
+        }
+    }
+
+    @include sm {
+        .project .btn-grp,
+        .project .grid__fixed-width.btn-grp {
+            flex-direction: column;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .grid-1-3.btn {
+            width: 100%;
+        }
+        .cta_btn-grp a.cta-btn,
+        .project a.cta-btn {
+            padding: .75rem 2.5rem;
+            justify-content: flex-start;
+        }
+    }
+
+    @include xs {
+        .project .btn-grp,
+        .projects .grid__fixed-width.btn-grp {
+            flex-direction: column;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .grid-1-3.btn {
+            width: 100%;
+        }
+        .cta_btn-grp a.cta-btn,
+        .project a.cta-btn {
+            justify-content: flex-start;
         }
     }
 
